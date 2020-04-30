@@ -17,7 +17,7 @@ app.get('/about', function(req, res) {
     res.render('pages/about');
 });
 
-//listen for request on port 3000, and as a callback function have the port listened on logged
-app.listen(3000, function() {
-    console.log(`Server running on port 3000`);
-  });
+const PORT = process.env.PORT || 3000;
+app.listen(PORT, () => {
+    console.log(`Our app is running on port ${ PORT }`);
+});
