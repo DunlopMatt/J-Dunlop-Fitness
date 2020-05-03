@@ -5,10 +5,31 @@
 }
 
 #Title{
-    text-align:center;
-    margin: 5em 5em;
+    text-align: center;
+    margin: 2em 5em 5em 5em;
 }
 
 #footer{
     margin-bottom: 0;
+}
+
+.navbar {
+    height: 85px;
+    font-size: 1.25em;
+}
+
+.nav-item{
+    padding: 0 2em;
+}
+
+.footer-icons{
+    font-size: 2.5em;
+}
+
+.fa-instagram{
+    color: #C13584;
+}
+
+.fa-envelope{
+    color: #708090;
 }

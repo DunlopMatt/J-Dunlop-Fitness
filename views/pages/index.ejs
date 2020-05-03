@@ -1,7 +1,8 @@
 <%- include('../partials/header') %>
 
-<div class="jumbotron" id="Title">
-    <h1 class="display-4">J Dunlop Fitness & Wellbeing</h1>
+<div id="Title" class=".bg-dark">
+    <h1 class="display-4 .text-light">J Dunlop Fitness & Wellbeing</h1>
+    <hr>
 </div>
 
 <section class="container-fluid px-0">
@@ -74,32 +75,32 @@
 
       <!--Contact form-->
 <div class="container" id="ContactForm">
-      <form>
+      <form action="/" method="POST">
         <div class="form-row">
           <div class="form-group col-md-6">
-            <label for="inputFirstName">First Name</label>
-            <input type="text" class="form-control" id="inputFirstName" placeholder="First Name">
+            <label for="FirstName">First Name</label>
+            <input type="text" class="form-control" name="FirstName" placeholder="First Name">
           </div>
           <div class="form-group col-md-6">
-            <label for="inputLastName">Last Name</label>
-            <input type="text" class="form-control" id="inputLastName" placeholder="Last Name">
+            <label for="LastName">Last Name</label>
+            <input type="text" class="form-control" name="LastName" placeholder="Last Name">
           </div>
         </div>
         <div class="form-group">
-            <label for="inputMessage">Your message</label>
-            <textarea class="form-control" id="inputMessage" rows="4"></textarea>
+            <label for="Message">Your message</label>
+            <textarea class="form-control" name="Message" rows="4"></textarea>
         </div>
         <div class="form-row">
             <div class="form-group col-md-6">
-              <label for="inputContactNumber">Contact Number</label>
-              <input type="number" class="form-control" id="ContactNumber">
+              <label for="ContactNumber">Contact Number</label>
+              <input type="number" class="form-control" name="ContactNumber">
             </div>
             <div class="form-group col-md-6">
-              <label for="inputEmail">Email</label>
-              <input type="email" class="form-control" id="inputEmail">
+              <label for="Email">Email</label>
+              <input type="email" class="form-control" name="Email">
             </div>
           </div>
-        <button type="submit" class="btn btn-primary">Sign in</button>
+        <button type="submit" class="btn btn-primary">Submit</button>
     </form>
 </div>
 
