@@ -1,5 +1,5 @@
 
-#ContactForm{
+#Contact{
     margin-top: 5em;
     margin-bottom: 5em;
 }
@@ -33,3 +33,9 @@
 .fa-envelope{
     color: #708090;
 }
+
+body {
+    position: relative;
+  }
+
+  .
