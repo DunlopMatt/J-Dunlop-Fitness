@@ -22,6 +22,8 @@ app.get('/about', function(req, res) {
 });
 
 
+//post route to send contact form
+
 //get info from for
 app.post('/', function(req, res){
     var output = `
