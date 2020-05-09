@@ -1,15 +1,30 @@
-var express       = require('express'),
-    nodemailer    = require('nodemailer'),
-    bodyParser    = require('body-parser');
+const express       = require('express'),
+      nodemailer    = require('nodemailer'),
+      flash         = require('connect-flash'),
+      bodyParser    = require('body-parser');
 
 var app = express();
 
 // set the view engine
 app.set('view engine', 'ejs');
 app.use(express.static(__dirname + '/public'));
-//body parser middleware
 app.use(bodyParser.urlencoded({ extended: false}))
 app.use(bodyParser.json())
+
+//session
+app.use(require("express-session")({
+  secret: "Alllrighty then!",
+  resave: false,
+  saveUninitialized: false
+}));
+
+//flash middle ware
+app.use(flash());
+app.use(function(req, res, next){
+  res.locals.error = req.flash("error");
+  res.locals.success = req.flash("success");
+  next();
+});
 
 // index page 
 app.get('/', function(req, res) {
@@ -61,11 +76,13 @@ app.post('/', function(req, res){
   //send email with transport object
   transporter.sendMail(mailOptions, function(err, info){
     if(err){
-      console.log(err);
+      req.flash("error", err.message);
+    }else{
+    req.flash("success","Thank you for submitting " + req.body.FirstName)
+    res.redirect('/');
     }
-    res.render('pages/index');
-    //  TODO:  add in flash to say message sent!
   });
+  
 });
 
 
