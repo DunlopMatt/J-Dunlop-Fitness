@@ -4,14 +4,16 @@
         <title>J Dunlop Fitness & Wellbeing</title>
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+        <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;500&display=swap" rel="stylesheet">
         <link href="/CSS/main.css" rel="stylesheet" type="text/css">
+        
         
 
     </head>
     <body data-spy="scroll" data-target="navbar">
 
-    <nav class="navbar sticky-top navbar-expand-lg navbar-dark bg-dark">
-        <a class="navbar-brand" href="#">
+    <nav class="navbar sticky-top navbar-expand-sm navbar-dark bg-dark">
+        <a class="navbar-brand" href="/">
             <i class="fas fa-dumbbell"> </i>
         </a>
          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
@@ -27,7 +29,6 @@
             </div>
           </nav>
 
-    <div class="container ">
       <% if(error && error.length > 0){ %>
           <div class="alert FlashMessage alert-danger" role="alert">
               <%= error %>
@@ -38,4 +39,3 @@
               <%= success %>
           </div>
       <% } %>
-  </div>

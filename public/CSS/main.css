@@ -6,7 +6,7 @@
 
 #Title{
     text-align: center;
-    margin: 2em 5em 5em 5em;
+    margin: 1em 5em 5em 5em;
 }
 
 #footer{
@@ -39,4 +39,44 @@ body {
     height: auto;
     width: auto;
     font-size: 20px;
+    font-family: 'Montserrat', sans-serif;
   }
+
+
+  .container-fluid{
+      width: 80%;
+      padding-bottom: 5em; 
+  }
+
+h1 {
+    letter-spacing: 2px;
+    font-size: 4em;
+    font-family: 'Oswald', sans-serif;
+}
+
+h2 {
+    letter-spacing: 2px;
+    text-align: center;
+    font-size: 2em;
+    font-family: 'Oswald', sans-serif;
+}
+
+h3 {
+    letter-spacing: 2px;
+    text-align: center;
+    font-size: 1.5em;
+    font-family: 'Oswald', sans-serif;
+}
+
+section {
+    padding-top: .2em;
+}
+
+/* .content {
+    background-color: #F5F5F5;
+} */
+
+.nav-item{ 
+    font-family: 'Oswald', sans-serif;
+    font-weight: 200;
+}
