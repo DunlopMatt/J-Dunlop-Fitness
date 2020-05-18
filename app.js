@@ -31,9 +31,15 @@ app.get('/', function(req, res) {
     res.render('pages/index');
 });
 
-// about page 
-app.get('/about', function(req, res) {
-    res.render('pages/about');
+//show pages
+//posts
+app.get('/posts', function(req, res) {
+  res.render('pages/posts');
+});
+
+//Clients
+app.get('/clients', function(req, res) {
+  res.render('pages/clients');
 });
 
 

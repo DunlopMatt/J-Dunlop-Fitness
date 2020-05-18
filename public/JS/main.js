@@ -1,11 +1,11 @@
 $(window).scroll(function() {
-    let currentPos = $(window).scrollTop();
+    const currentPos = $(window).scrollTop();
 
-        $('.nav-item').each(function() {
-    let sectionLink = $(this);
+    $('.nav-item').each(function() {
+    const sectionLink = $(this);
     // capture the height of the navbar
-    let navHeight = $('.navbar').outerHeight() + 1;
-    let section = $(sectionLink.attr('href'));
+    const navHeight = $('.navbar').outerHeight() + 1;
+    const section = $(sectionLink.attr('href'));
 
     // subtract the navbar height from the top of the section
     if(currentPos > section.position().top - navHeight && currentPos < section.position().top + section.height() ) {
@@ -14,5 +14,13 @@ $(window).scroll(function() {
     }
     });
 });
+
+$('.nav-link').click(function(){    
+    var divId = $(this).attr('href');
+     $('html, body').animate({
+      scrollTop: $(divId).offset().top - 85
+    }, 500);
+  });
+
 
 $('body').scrollspy({ target: 'navbar' });
