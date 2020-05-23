@@ -12,6 +12,7 @@
   "dependencies": {
     "body-parser": "^1.19.0",
     "connect-flash": "^0.1.1",
+    "contentful": "^7.14.4",
     "ejs": "^3.1.2",
     "ejs-locals": "^1.0.2",
     "express": "^4.17.1",

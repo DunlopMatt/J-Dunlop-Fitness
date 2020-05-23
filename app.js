@@ -26,6 +26,18 @@ app.use(function(req, res, next){
   next();
 });
 
+//contentfull
+const contentful = require("contentful");
+const client = contentful.createClient({
+  space: "xtro6jmgne1s",
+  accessToken: "lE_0yuJVrp6MKWjaQDR8qTXJzNxbPWH0udPAW19Zeok"
+});
+// This API call will request an entry with the specified ID from the space defined at the top, using a space-specific access token.
+client
+  .getEntry("2dbRz7NI6BfZbW6lu41cCy")
+  .then(entry => console.log(entry))
+  .catch(err => console.log(err));
+
 // index page 
 app.get('/', function(req, res) {
     res.render('pages/index');

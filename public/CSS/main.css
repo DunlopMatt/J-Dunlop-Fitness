@@ -4,9 +4,15 @@
     margin-bottom: 5em;
 }
 
-#Title{
+#banner{
     text-align: center;
-    margin: 1em 5em 5em 5em;
+    background-color: #121212 ;
+    color: rgba(255,255,255, 0.87);
+    letter-spacing: 2px;
+    font-family: 'Oswald', sans-serif;
+    line-height: 1.6;
+    height: 255px;
+    text-shadow: 1.5px 1.5px 1px #343a40;
 }
 
 #footer{
@@ -16,6 +22,7 @@
 .navbar {
     height: 85px;
     font-size: 1.25em;
+    color:  rgba(255,255,255, 0.87);
 }
 
 .nav-item{
@@ -40,6 +47,8 @@ body {
     width: auto;
     font-size: 20px;
     font-family: 'Montserrat', sans-serif;
+    background-color: #343a40;
+    color:  rgba(255,255,255, 0.6);
   }
 
 
@@ -48,17 +57,21 @@ body {
       padding-bottom: 5em; 
   }
 
-h1 {
-    letter-spacing: 2px;
-    font-size: 4em;
-    font-family: 'Oswald', sans-serif;
-}
-
-h2 {
+.heading {
     letter-spacing: 2px;
     text-align: center;
     font-size: 2em;
     font-family: 'Oswald', sans-serif;
+    color: rgba(255,255,255, 0.87);
+}
+
+h1.title {
+    font-size: 4em;
+}
+
+
+h2.title{
+    font-size: 3em;
 }
 
 h3 {
@@ -66,6 +79,7 @@ h3 {
     text-align: center;
     font-size: 1.5em;
     font-family: 'Oswald', sans-serif;
+    color: rgba(255,255,255, 0.87);
 }
 
 section {
@@ -75,9 +89,28 @@ section {
 .nav-item{ 
     font-family: 'Oswald', sans-serif;
     font-weight: 200;
+    color: white;
 }
 
 .nav-item {
     border-right: 1px solid white;
     box-sizing: border-box;
+    text-shadow: 1.5px 1.5px 1px #121212;
+    text-shadow: -1px -1px 1px #121212;
+}
+
+.navbar-brand {
+    color: white;
+}
+
+
+.card-preview {
+    font-size: 1em;
+    font-style: italic;
+    
+}
+
+.card-title {
+    font-weight:bold;
+    font-size: 1.1em;
 }
