@@ -22,5 +22,6 @@ $('.nav-link').click(function(){
     }, 500);
   });
 
+  
 
 $('body').scrollspy({ target: 'navbar' });

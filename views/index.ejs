@@ -1,4 +1,4 @@
-<%- include('../partials/header') %>
+<%- include('./partials/header') %>
 
 <section class="container-fluid px-0" id="About">
     <div class="row align-items-center content">
@@ -8,7 +8,7 @@
         <div class="col-lg-6 text-center order-1 order-lg-2">
             <div class="row justify-content-center">
                 <div class="col-10 col-lg-8 m-5 m-lg-0 ">
-                    <h3>Conditioning</h3>
+                    <h3>Why I train</h3>
                     <hr>
                     <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque, iste molestiae
                         beatae, maiores deserunt
@@ -26,7 +26,7 @@
         <div class="col-lg-6 text-center">
             <div class="row justify-content-center">
                 <div class="col-10 col-lg-8 m-5 m-lg-0">
-                    <h3>Strength</h3>
+                    <h3>My philosophy</h3>
                     <hr>
                     <p class="lead content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque, iste molestiae
                         beatae, maiores deserunt
@@ -50,7 +50,7 @@
         <div class="col-lg-6 text-center order-1 order-lg-2">
             <div class="row justify-content-center">
                 <div class="col-10 col-lg-8 m-5 m-lg-0">
-                    <h3>Nutrition</h3>
+                    <h3>How I can help YOU</h3>
                     <hr>
                     <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque, iste molestiae
                         beatae, maiores
@@ -69,7 +69,7 @@
     </div>
 </section>
 
-<section class="container-fluid" id="Blog">
+<section class="container-fluid" id="Training">
     <h2 class="heading" >TRAINING SYSTEMS</h2>
     <hr>
     <div class="card-columns">
@@ -78,7 +78,12 @@
         <div class="card-body">
           <h5 class="card-title text-dark">Big & Strong</h5>
           <p class="card-preview text-secondary">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ...</p>
-          <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small><button class="btn btn-sm float-right btn-danger"> Read more?</button></p>
+          <p class="card-text">
+            <small class="text-muted">12 weeks - Advanced</small>
+            <form action="/training/BnS">
+              <button class="btn btn-sm btn-danger">Read more?</a></button>
+            </form>
+          </p>
         </div>
       </div>
         <div class="card">
@@ -86,7 +91,11 @@
           <div class="card-body">
             <h5 class="card-title text-dark">Trim & tone</h5>
             <p class="card-preview text-secondary">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Sit amet nisl purus in mollis...</p>
-            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small><button class="btn btn-sm float-right btn-danger"> Read more?</button></p>
+            <p class="card-text">
+              <small class="text-muted">8 weeks - Beginner</small>
+              <form action="/training/TnT">
+                <button class="btn btn-sm btn-danger">Read more?</a></button>
+              </form>
           </div>
         </div>
         <div class="card">
@@ -94,7 +103,11 @@
           <div class="card-body">
             <h5 class="card-title text-dark">Healthy lifestyle </h5>
             <p class="card-preview text-secondary">Cursus mattis molestie a iaculis at erat pellentesque. Suspendisse sed nisi lacus sed viverra tellus in hac...</p>
-            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small><button class="btn btn-sm float-right btn-danger"> Read more?</button></p>
+            <p class="card-text">
+              <small class="text-muted">4 weeks - Everyone</small>
+              <form action="/training/HL">
+                <button class="btn btn-sm btn-danger">Read more?</a></button>
+              </form>
           </div>
         </div>
       </div>
@@ -110,6 +123,9 @@
             <h5 class="card-title">Card title</h5>
             <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
             <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+            <form action="/testimonials/1">
+              <button class="btn btn-sm btn-danger">Read my story</a></button>
+            </form>
           </div>
         </div>
         <div class="card text-dark">
@@ -118,6 +134,9 @@
             <h5 class="card-title">Card title</h5>
             <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
             <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+            <form action="/testimonials/2">
+              <button class="btn btn-sm btn-danger">Read my story</a></button>
+            </form>
           </div>
         </div>
         <div class="card text-dark">
@@ -126,6 +145,9 @@
             <h5 class="card-title">Card title</h5>
             <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
             <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+            <form action="/testimonials/3">
+              <button class="btn btn-sm btn-danger">Read my story</a></button>
+            </form>
           </div>
         </div>
       </div>
@@ -151,7 +173,7 @@
         </div>
         <div class="form-group">
             <label for="Message">Your message</label>
-            <textarea class="form-control" name="Message" rows="4"></textarea>
+            <textarea class="form-control" name="Message" rows="4" placeholder=""></textarea>
         </div>
         <div class="form-row">
             <div class="form-group col-lg-6">
@@ -170,4 +192,4 @@
 
 </section>
 
-<%- include('../partials/footer') %>
+<%- include('./partials/footer') %>

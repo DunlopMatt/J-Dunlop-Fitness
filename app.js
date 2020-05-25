@@ -35,27 +35,39 @@ const client = contentful.createClient({
 // This API call will request an entry with the specified ID from the space defined at the top, using a space-specific access token.
 client
   .getEntry("2dbRz7NI6BfZbW6lu41cCy")
-  .then(entry => console.log(entry))
-  .catch(err => console.log(err));
+  // .then(entry => console.log(entry))
+  // .catch(err => console.log(err));
 
 // index page 
 app.get('/', function(req, res) {
-    res.render('pages/index');
+    res.render('index', {page_name: 'index'});
 });
 
 //show pages
-//posts
-app.get('/posts', function(req, res) {
-  res.render('pages/posts');
+//Training Programs
+app.get('/training/BnS', function(req, res) {
+  res.render('training/BnS', {page_name: 'training'});
+});
+app.get('/training/TnT', function(req, res) {
+  res.render('training/TnT', {page_name: 'training'});
+});
+app.get('/training/HL', function(req, res) {
+  res.render('training/HL', {page_name: 'training'});
 });
 
-//Clients
-app.get('/clients', function(req, res) {
-  res.render('pages/clients');
+//Testimonials
+app.get('/testimonials/1', function(req, res) {
+  res.render('testimonials/1', {page_name: 'testimonials'});
+});
+app.get('/testimonials/2', function(req, res) {
+  res.render('testimonials/2', {page_name: 'testimonials'});
+});
+app.get('/testimonials/3', function(req, res) {
+  res.render('testimonials/3', {page_name: 'testimonials'});
 });
 
 
-//post route to send contact form
+//post route to send contact fonorm
 
 //get info from for
 app.post('/', function(req, res){

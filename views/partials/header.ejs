@@ -17,10 +17,15 @@
             <i class="fas fa-dumbbell"> </i>
         </a>
               <div class="navbar-nav mr-auto ">
-                <a class="nav-item nav-link  active" id="AboutNav" href="#About">About</a>
-                <a class="nav-item nav-link " id="BlogNav" href="#Blog">Training Systems</a>
-                <a class="nav-item nav-link " id="TestNav" href="#Testimonials">Testimonials</a>
-                <a class="nav-item nav-link " id="ContactNav" href="#Contact">Contact</a>
+                <a  class="nav-item nav-link <% if(page_name === 'index'){ %><%-"active" %><%} %>" 
+                    id="AboutNav" href="<%if(page_name != 'index'){ %><%-"/#About"%><% }else{%> <%- "#About" %><%}%>">About</a>
+
+                <a class="nav-item nav-link <% if(page_name === 'training'){ %><%-"active" %><%} %>" 
+                    id="TrainingNav" href="<%if(page_name != 'index'){ %><%-"/#Training"%><% }else{%> <%- "#Training" %><%}%>">Training Systems</a>
+                                                
+                <a class="nav-item nav-link <% if(page_name === 'testimonials'){ %><%-"active" %><%} %>" 
+                    id="TestNav" href="<%if(page_name != 'index'){ %><%-"/#Testimonials"%><% }else{%> <%- "#Testimonials" %><%}%>"> Testimonials</a>
+                <a class="nav-item nav-link" id="ContactNav" href="<%if(page_name != 'index'){ %><%-"/#Contact"%><% }else{%> <%- "#Contact" %><%}%>"> Contact </a>
               </div>
         <span></span>
           
