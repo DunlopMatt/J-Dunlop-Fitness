@@ -1,7 +1,8 @@
 const express       = require('express'),
       nodemailer    = require('nodemailer'),
       flash         = require('connect-flash'),
-      bodyParser    = require('body-parser');
+      bodyParser    = require('body-parser'),
+     path           = require('path');
 
 var app = express();
 
@@ -46,24 +47,24 @@ app.get('/', function(req, res) {
 //show pages
 //Training Programs
 app.get('/training/bns', function(req, res) {
-  res.render('./training/bns', {page_name: 'training'});
+  res.render(path.join('training', 'bns'), {page_name: 'training'});
 });
 app.get('/training/tnt', function(req, res) {
-  res.render('./training/tnt', {page_name: 'training'});
+  res.render(path.join('training', 'tnt'), {page_name: 'training'});
 });
 app.get('/training/hl', function(req, res) {
-  res.render('./training/hl', {page_name: 'training'});
+  res.render(path.join('training', 'hl'), {page_name: 'training'});
 });
 
 //Testimonials
 app.get('/testimonials/1', function(req, res) {
-  res.render('./testimonials/1', {page_name: 'testimonials'});
+  res.render(path.join('testimonials', 'hl'), {page_name: 'testimonials'});
 });
 app.get('/testimonials/2', function(req, res) {
-  res.render('./testimonials/2', {page_name: 'testimonials'});
+  res.render(path.join('testimonials', 'hl'), {page_name: 'testimonials'});
 });
 app.get('/testimonials/3', function(req, res) {
-  res.render('./testimonials/3', {page_name: 'testimonials'});
+  res.render(path.join('testimonials', 'hl'), {page_name: 'testimonials'});
 });
 
 
