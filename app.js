@@ -45,14 +45,14 @@ app.get('/', function(req, res) {
 
 //show pages
 //Training Programs
-app.get('/training/BnS', function(req, res) {
-  res.render('./training/BnS', {page_name: 'training'});
+app.get('/training/bns', function(req, res) {
+  res.render('./training/bns', {page_name: 'training'});
 });
-app.get('/training/TnT', function(req, res) {
-  res.render('./training/TnT', {page_name: 'training'});
+app.get('/training/tnt', function(req, res) {
+  res.render('./training/tnt', {page_name: 'training'});
 });
-app.get('/training/HL', function(req, res) {
-  res.render('./training/HL', {page_name: 'training'});
+app.get('/training/hl', function(req, res) {
+  res.render('./training/hl', {page_name: 'training'});
 });
 
 //Testimonials
