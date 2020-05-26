@@ -44,6 +44,8 @@ app.get('/', function(req, res) {
     res.render('index', {page_name: 'index'});
 });
 
+//HELP ME WARNER 
+
 //show pages
 //Training Programs
 app.get('/training/bns', function(req, res) {
@@ -68,7 +70,7 @@ app.get('/testimonials/3', function(req, res) {
 });
 
 
-//post route to send contact fonorm
+//post route to send contact form
 
 //get info from for
 app.post('/', function(req, res){
