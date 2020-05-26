@@ -56,7 +56,7 @@ app.get('/training/tnt', function(req, res) {
   res.render('Training/tnt', {page_name: 'training'});
 });
 app.get('/training/hl', function(req, res) {
-  res.render('Training/hl', {page_name: 'training'});
+  res.render('Training/index', {page_name: 'training'});
 });
 
 //Testimonials
