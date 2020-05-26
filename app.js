@@ -64,7 +64,7 @@ app.get('/testimonials/2', function(req, res) {
   res.render(path.join(__dirname,'views','testimonials', '2'), {page_name: 'testimonials'});
 });
 app.get('/testimonials/3', function(req, res) {
-  res.render('testimonials/3'), {page_name: 'testimonials'});
+  res.render('testimonials/3', {page_name: 'testimonials'});
 });
 
 
