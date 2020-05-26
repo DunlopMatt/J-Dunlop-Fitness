@@ -50,24 +50,24 @@ app.get('/', function(req, res) {
 //show pages
 //Training Programs
 app.get('/training/bns', function(req, res) {
-  res.render('Training/big_strong', {page_name: 'training'});
+  res.render('training/big_strong', {page_name: 'training'});
 });
 app.get('/training/tnt', function(req, res) {
-  res.render('Training/tone_trim', {page_name: 'training'});
+  res.render('training/tone_trim', {page_name: 'training'});
 });
 app.get('/training/hl', function(req, res) {
-  res.render('Training/health_living', {page_name: 'training'});
+  res.render('training/health_living', {page_name: 'training'});
 });
 
 //Testimonials
 app.get('/testimonials/1', function(req, res) {
-  res.render('Testimonials/1', {page_name: 'testimonials'});
+  res.render('testimonials/1', {page_name: 'testimonials'});
 });
 app.get('/testimonials/2', function(req, res) {
-  res.render('Testimonials/2', {page_name: 'testimonials'});
+  res.render('testimonials/2', {page_name: 'testimonials'});
 });
 app.get('/testimonials/3', function(req, res) {
-  res.render('Testimonials/3', {page_name: 'testimonials'});
+  res.render('testimonials/3', {page_name: 'testimonials'});
 });
 
 
