@@ -50,13 +50,13 @@ app.get('/', function(req, res) {
 //show pages
 //Training Programs
 app.get('/training/bns', function(req, res) {
-  res.render('Training/bns', {page_name: 'training'});
+  res.render('Training/big_strong', {page_name: 'training'});
 });
 app.get('/training/tnt', function(req, res) {
-  res.render('Training/tnt', {page_name: 'training'});
+  res.render('Training/tone_trim', {page_name: 'training'});
 });
 app.get('/training/hl', function(req, res) {
-  res.render('Training/index', {page_name: 'training'});
+  res.render('Training/health_living', {page_name: 'training'});
 });
 
 //Testimonials
