@@ -8,6 +8,7 @@ var app = express();
 
 // set the view engine
 app.set('view engine', 'ejs');
+app.set("views", path.join(__dirname, "views"));
 app.use(express.static(__dirname + '/public'));
 app.use(bodyParser.urlencoded({ extended: false}))
 app.use(bodyParser.json())
@@ -39,34 +40,34 @@ client
   // .then(entry => console.log(entry))
   // .catch(err => console.log(err));
 
-// index page 
+// index page
 app.get('/', function(req, res) {
     res.render('index', {page_name: 'index'});
 });
 
-//HELP ME WARNER 
+//HELP ME WARNER
 
 //show pages
 //Training Programs
 app.get('/training/bns', function(req, res) {
-  res.render(path.join('Training', 'bns.ejs'), {page_name: 'training'});
+  res.render('Training/bns', {page_name: 'training'});
 });
 app.get('/training/tnt', function(req, res) {
-  res.render(path.join(__dirname, 'views/training/tnt'), {page_name: 'training'});
+  res.render('Training/tnt', {page_name: 'training'});
 });
 app.get('/training/hl', function(req, res) {
-  res.render(path.join(process.cwd(), 'views', 'training', 'hl'), {page_name: 'training'});
+  res.render('Training/hl', {page_name: 'training'});
 });
 
 //Testimonials
 app.get('/testimonials/1', function(req, res) {
-  res.render('testimonials/1', {page_name: 'testimonials'});
+  res.render('Testimonials/1', {page_name: 'testimonials'});
 });
 app.get('/testimonials/2', function(req, res) {
-  res.render(path.join(__dirname,'views','testimonials', '2'), {page_name: 'testimonials'});
+  res.render('Testimonials/2', {page_name: 'testimonials'});
 });
 app.get('/testimonials/3', function(req, res) {
-  res.render('testimonials/3', {page_name: 'testimonials'});
+  res.render('Testimonials/3', {page_name: 'testimonials'});
 });
 
 
@@ -93,7 +94,7 @@ app.post('/', function(req, res){
     port: 587,
     secure: false,
     auth: {
-      user: "dunlopmatt2@gmail.com", 
+      user: "dunlopmatt2@gmail.com",
       pass: "K100603w!"
     }
   });
