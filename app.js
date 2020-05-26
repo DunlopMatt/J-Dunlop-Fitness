@@ -47,10 +47,12 @@ app.get('/', function(req, res) {
 //show pages
 //Training Programs
 app.get('/training/bns', function(req, res) {
-  res.render(path.join('Training', 'bns.ejs'), {page_name: 'training'});
+  let bns = path.join('Training', 'bns.ejs')
+  res.render(bns, {page_name: 'training'});
+  console.log(bns);
 });
 app.get('/training/tnt', function(req, res) {
-  res.render(path.join('Training', 'tnt.ejs'), {page_name: 'training'});
+  res.render('Training/tnt', {page_name: 'training'});
 });
 app.get('/training/hl', function(req, res) {
   res.render(path.join('Training', 'hl.ejs'), {page_name: 'training'});
