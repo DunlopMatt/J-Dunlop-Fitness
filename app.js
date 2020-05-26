@@ -2,7 +2,7 @@ const express       = require('express'),
       nodemailer    = require('nodemailer'),
       flash         = require('connect-flash'),
       bodyParser    = require('body-parser'),
-     path           = require('path');
+      path          = require('path');
 
 var app = express();
 
@@ -47,13 +47,13 @@ app.get('/', function(req, res) {
 //show pages
 //Training Programs
 app.get('/training/bns', function(req, res) {
-  res.render(path.join('training', 'bns'), {page_name: 'training'});
+  res.render(path.join('training', 'bns.ejs'), {page_name: 'training'});
 });
 app.get('/training/tnt', function(req, res) {
-  res.render(path.join('training', 'tnt'), {page_name: 'training'});
+  res.render(path.join('training', 'tnt.ejs'), {page_name: 'training'});
 });
 app.get('/training/hl', function(req, res) {
-  res.render(path.join('training', 'hl'), {page_name: 'training'});
+  res.render(path.join('training', 'hl.ejs'), {page_name: 'training'});
 });
 
 //Testimonials
