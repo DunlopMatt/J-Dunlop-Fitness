@@ -47,13 +47,13 @@ app.get('/', function(req, res) {
 //show pages
 //Training Programs
 app.get('/training/bns', function(req, res) {
-  res.render(path.join('training', 'bns.ejs'), {page_name: 'training'});
+  res.render(path.join('Training', 'bns.ejs'), {page_name: 'training'});
 });
 app.get('/training/tnt', function(req, res) {
-  res.render(path.join('training', 'tnt.ejs'), {page_name: 'training'});
+  res.render(path.join('Training', 'tnt.ejs'), {page_name: 'training'});
 });
 app.get('/training/hl', function(req, res) {
-  res.render(path.join('training', 'hl.ejs'), {page_name: 'training'});
+  res.render(path.join('Training', 'hl.ejs'), {page_name: 'training'});
 });
 
 //Testimonials
