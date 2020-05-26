@@ -47,29 +47,25 @@ app.get('/', function(req, res) {
 //show pages
 //Training Programs
 app.get('/training/bns', function(req, res) {
-  let bns = path.join('Training', 'bns.ejs')
-  res.render(bns, {page_name: 'training'});
-  console.log(bns);
+  res.render(path.join('Training', 'bns.ejs'), {page_name: 'training'});
 });
 app.get('/training/tnt', function(req, res) {
-  let tnt = path.join(__dirname, 'views/training/tnt')
-  res.render(tnt, {page_name: 'training'});
-  console.log(tnt);
+  res.render(path.join(__dirname, 'views/training/tnt'), {page_name: 'training'});
 });
 app.get('/training/hl', function(req, res) {
-  res.render(path.join('Training', 'hl.ejs'), {page_name: 'training'});
+  res.render(path.join(process.cwd(), 'views', 'training', 'hl'), {page_name: 'training'});
 });
 
 //Testimonials
-// app.get('/testimonials/1', function(req, res) {
-//   res.render(path.join('testimonials', 'hl'), {page_name: 'testimonials'});
-// });
-// app.get('/testimonials/2', function(req, res) {
-//   res.render(path.join('testimonials', 'hl'), {page_name: 'testimonials'});
-// });
-// app.get('/testimonials/3', function(req, res) {
-//   res.render(path.join('testimonials', 'hl'), {page_name: 'testimonials'});
-// });
+app.get('/testimonials/1', function(req, res) {
+  res.render('testimonials/1', {page_name: 'testimonials'});
+});
+app.get('/testimonials/2', function(req, res) {
+  res.render(path.join(__dirname,'views','testimonials', '2'), {page_name: 'testimonials'});
+});
+app.get('/testimonials/3', function(req, res) {
+  res.render('testimonials/3'), {page_name: 'testimonials'});
+});
 
 
 //post route to send contact fonorm
