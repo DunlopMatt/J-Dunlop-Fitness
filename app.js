@@ -61,13 +61,13 @@ app.get('/training/hl', function(req, res) {
 
 //Testimonials
 app.get('/testimonials/1', function(req, res) {
-  res.render('testimonials/1', {page_name: 'testimonials'});
+  res.render('Testimonials/1', {page_name: 'testimonials'});
 });
 app.get('/testimonials/2', function(req, res) {
-  res.render('testimonials/2', {page_name: 'testimonials'});
+  res.render('Testimonials/2', {page_name: 'testimonials'});
 });
 app.get('/testimonials/3', function(req, res) {
-  res.render('testimonials/3', {page_name: 'testimonials'});
+  res.render('Testimonials/3', {page_name: 'testimonials'});
 });
 
 
